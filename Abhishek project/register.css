@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh; /* Adjusted from 120vh to 100vh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    overflow: hidden; /* Prevents overflow */
+}
+
+.split-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-section {
+    background-color: #ffffff;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures full height */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.right-section {
+    background-color: #fff5e6;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%; /* Ensures full height */
+}
+
+.form-container {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 750px; /* Ensures the container is not too wide */
+    text-align: left;
+    background-color: #ffffff; /* Ensure background color is consistent */
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    /* border-radius: 5px; */
+    background-color: #ffecd9;
+    box-sizing: border-box;
+}
+
+.input-group:last-child input[type="file"] {
+    display: block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff5e6; /* Very light orange */
+    overflow: hidden;
+}
+
+.decorative-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply; /* Blend the image with the background */
+    opacity: 0.8; /* To blend with the background */
+}
